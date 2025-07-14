@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon node app.js",
+    "dev": "node app.js",
     "build": "echo \"No build step required\"",
     "start": "node app.js"
   },
