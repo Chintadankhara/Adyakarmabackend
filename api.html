@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <h4>Welcome to api testing</h4>
+        <div>
+            <label for="uri">
+                <input type="text" name="" id="uri" placeholder="http://localhost:***0">
+                <select name="" id="method">
+                    <option value="NONE">NONE</option>
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="DELETE">DELETE</option>
+                </select> <br><br>
+                <label for="check">
+                    Does it has body ?
+                    <input type="checkbox" name="" id="check">
+                </label>
+
+                <label for="">
+                    <textarea name="" id="body" placeholder="JSON..."></textarea>
+                </label>
+                <br><br>
+                <button id="request">Request</button>
+                <button id="cancel">Cancel</button>
+                <br> <br>
+                <textarea name="" id="response" placeholder="Response from server..." cols="32" rows="8"></textarea>
+            </label>
+        </div>
+
+    </div>
+
+    <script>
+        var apiEndPoint = document.getElementById("uri");
+        var httpMethods = document.getElementById("method");
+        var isbodycheck = document.getElementById("check");
+        var jsonbodydata = document.getElementById("body");
+        var requestButton = document.getElementById("request");
+        var cancelButton = document.getElementById("cancel");
+        var response = document.getElementById("response");
+
+        var requestFunction = () => {
+
+            let i = 0;
+            for (i = 1; i < 1000; i++) {
+                console.log(i);
+            }
+        }
+
+        requestButton.addEventListener("click", requestFunction);
+        cancelButton.removeEventListener("click", requestFunction);
+    </script>
+
+</body>
+
+</html>
