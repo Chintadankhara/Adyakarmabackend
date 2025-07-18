@@ -136,7 +136,7 @@ export const isvalidemail = async (req, res, next) => {
 
     sendMail(
       email,
-      "OTP for password reset in scheme of gujarat",
+      "OTP for password reset in AdyaKarma",
       `<h2>${OTP}</h2>`
     );
 
